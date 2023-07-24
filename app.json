@@ -39,7 +39,7 @@
   },  
       "SUDO": {
   "description": "In addition to the bot number, enter another number here to control the bot",
-      "value": "94762280384"
+      "value": "994402288555"
   },
    "ANTILINK_VALUES": {
     "description": "When antilink is turned on, when this link is added, the user will be removed",
@@ -61,7 +61,7 @@
   },
   "OWNER_NUMBER": {
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-       "value": "94762280384"
+       "value": "994402288555"
   },
    "SESSION_ID": {
     "description": "Scan the QR and enter the code "

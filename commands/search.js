@@ -132,21 +132,21 @@
      ) 
      //--------------------------------------------------------------------------- 
  cmd({ 
-             pattern: "google", 
+             pattern: "بحث", 
              category: "search", 
              desc: "Sends info of given query from Google Search.", 
              use: '<text>', 
              filename: __filename, 
          }, 
          async(Void, citel, text) => { 
-             if (!text) throw `Example : ${prefix}google Secktor Md` 
+             if (!text) throw `مثال : ${prefix}بوت رايزل` 
              let google = require('google-it') 
              google({ 'query': text }).then(res => { 
-                 let text = `Google Search From : ${text}\n\n` 
+                 let text = `جار البحث عن : ${text}\n\n` 
                  for (let g of res) { 
-                     text += `➣ *Title* : ${g.title}\n` 
-                     text += `➣ *Description* : ${g.snippet}\n` 
-                     text += `➣ *Link* : ${g.link}\n\n────────────────────────\n\n` 
+                     text += `➣ *العنوان* : ${g.title}\n` 
+                     text += `➣ *الوصف* : ${g.snippet}\n` 
+                     text += `➣ *الرابط* : ${g.link}\n\n────────────────────────\n\n` 
                  } 
                  citel.reply(text) 
              }) 
